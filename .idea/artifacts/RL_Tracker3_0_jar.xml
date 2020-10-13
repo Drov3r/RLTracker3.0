@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RL Tracker3.0:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RL_Tracker3_0_jar</output-path>
+    <root id="archive" name="RL Tracker3.0.jar">
+      <element id="module-output" name="RL Tracker3.0" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/jsoup-1.13.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
