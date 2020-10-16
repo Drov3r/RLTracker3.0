@@ -12,7 +12,7 @@ public class Logger {
     static GraphPanel mainPanel;
     static int current=2;
     static boolean[] change=new boolean[7];
-
+   static String number = "76561198387037294";
     public static void main(String[] args ) throws IOException {
 
         while (true) {
@@ -21,9 +21,9 @@ public class Logger {
 
             for(boolean x:change)x=false;
             //"76561198176055490"   mine
-            String[] people = {"76561198387037294"};
 
-            for (String number : people) {
+
+
                 int[] current = new int[7];
                 int i = 0;
                 int j = 0;
@@ -96,11 +96,11 @@ public class Logger {
                     i++;
 
 
-                }}
+                }
                 try {
-                    makeGraph("76561198387037294",playlistNames);
+                    makeGraph(number,playlistNames);
                     System.out.println("Sleeping");
-                    TimeUnit.MINUTES.sleep(1);
+                    TimeUnit.MINUTES.sleep(4);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -133,6 +133,7 @@ public class Logger {
 
             }
             if (first) {
+                first=false;
                 mainPanel = new GraphPanel(list);
                 mainPanel.setPreferredSize(new Dimension(800, 600));
                 JFrame frame = new JFrame("DrawGraph");
