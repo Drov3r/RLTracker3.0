@@ -12,7 +12,7 @@ public class Logger {
     static GraphPanel mainPanel;
     static int current=2;
     static boolean[] change=new boolean[7];
-   static String number = "76561198387037294";
+   static String number = "76561198176055490";
     public static void main(String[] args ) throws IOException {
 
         while (true) {
