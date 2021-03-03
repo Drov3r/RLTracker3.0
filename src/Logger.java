@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 
 public class Logger {
     static boolean  first=true;
-    static GraphPanel mainPanel;
     static int current=2;
     static boolean[] change=new boolean[7];
    static String number = "76561198176055490";
@@ -132,17 +131,7 @@ public class Logger {
 
 
             }
-            if (first) {
-                first=false;
-                mainPanel = new GraphPanel(list);
-                mainPanel.setPreferredSize(new Dimension(800, 600));
-                JFrame frame = new JFrame("DrawGraph");
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.getContentPane().add(mainPanel);
-                frame.pack();
-                frame.setLocationRelativeTo(null);
-                frame.setVisible(true);
-            }else mainPanel.setScores(list);
+
 
     }catch (IOException e){
             System.out.println(e);
